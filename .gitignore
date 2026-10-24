@@ -33,3 +33,18 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Python env
+microservice_env/
+.microservice_env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local Database
+*.sqlite3
+
+# IDE settings
+.vscode/
+.idea/
