@@ -48,3 +48,11 @@ __pycache__/
 # IDE settings
 .vscode/
 .idea/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Docker overrides
+docker-compose.override.yml

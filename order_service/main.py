@@ -1,9 +1,13 @@
+import os
 import httpx
 from fastapi import FastAPI, HTTPException
 
 app = FastAPI()
 
-PRODUCT_SERVICE_URL = "http://127.0.0.1:8001"
+PRODUCT_SERVICE_URL = os.environ.get(
+    "PRODUCT_SERVICE_URL",
+    "http://127.0.0.1:8001"
+)
 
 
 @app.post("/orders/{product_id}")
